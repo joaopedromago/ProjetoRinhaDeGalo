@@ -7,6 +7,11 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import Vue from 'vue'
+import Buefy from 'buefy'
+import 'buefy/dist/buefy.css'
+
+Vue.use(Buefy)
 
 export default Vue.extend({
   name: 'App'
