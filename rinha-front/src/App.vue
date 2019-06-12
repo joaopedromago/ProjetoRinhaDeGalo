@@ -1,30 +1,19 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <v-navbar></v-navbar>
     <router-view/>
+    <v-footer></v-footer>
   </div>
 </template>
 
-<script lang="ts">
-import Vue from 'vue'
-import Vue from 'vue'
-import Buefy from 'buefy'
-import 'buefy/dist/buefy.css'
+<script>
+import Footer from "@/shared/footer.vue";
+import NavBar from "@/shared/navbar.vue";
 
-Vue.use(Buefy)
-
-export default Vue.extend({
-  name: 'App'
-})
+export default {
+  components: {
+    "v-footer": Footer,
+    "v-navbar": NavBar
+  }
+};
 </script>
-
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
