@@ -23,7 +23,7 @@ import { toastr } from "../services/toastr.service";
 @Component({
   components: {}
 })
-export default class Home extends Vue {
+export default class Partidas extends Vue {
   public exibirModal = false;
   public fotoModal = "";
 

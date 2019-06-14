@@ -1,13 +1,13 @@
 <template>
   <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-      <a class="navbar-item" href="https://bulma.io">Rinha de Galo</a>
+      <router-link to="/home" class="navbar-item">Rinha de Galo</router-link>
     </div>
 
     <div id="navbarBasicExample" class="navbar-menu">
       <div class="navbar-start">
-        <a class="navbar-item">Galos</a>
-        <a class="navbar-item">Partidas</a>
+        <router-link to="/galos" class="navbar-item">Galos</router-link>
+        <router-link to="/partidas" class="navbar-item">Partidas</router-link>
       </div>
       <div class="navbar-end">
         <div class="navbar-item has-dropdown is-hoverable">

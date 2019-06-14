@@ -1,6 +1,6 @@
 import Vue from "vue";
 
-class Toastr {
+class ToastrService {
     constructor() {
 
     }
@@ -38,4 +38,4 @@ class Toastr {
     }
 }
 
-export const toastr = new Toastr();
+export const toastr = new ToastrService();
